@@ -186,7 +186,6 @@ This repository is published as a public GitHub repo. See [PUBLISH.md](PUBLISH.m
 
 The 21 patterns are the conceptual framework of **Antonio Gulli**, *Agentic Design Patterns: A Hands-On Guide to Building Intelligent Systems* (2025).
 
-- **Free to read** (author's draft): https://docs.google.com/document/d/1rsaK53T3Lg5KoGwvf8ukOUvbELRtH-V0LnOIFDxBryE/
 - **Print / ebook** (Springer / Amazon): all the author's royalties are donated to Save the Children — worth buying if these patterns earn their keep.
 
 These skills are an **original distillation** — distilled from a full read of the book (each chapter's pattern overview, "At a Glance" box, and key takeaways), then rewritten for selection and auto-triggering inside Claude Code. They deliberately do **not** reproduce the book's prose, code, or figures — read the book itself for the full overviews, hands-on code examples, and takeaways.
