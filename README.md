@@ -180,7 +180,7 @@ The router skill instead contains a symptom-to-pattern index, decision heuristic
 
 ## Publishing
 
-This repository is ready to publish as-is. See [PUBLISH.md](PUBLISH.md) for the `gh` CLI one-liner and the manual create-on-web-then-push route. Before pushing, replace `<YOUR NAME>` in `LICENSE` and `albertoclemente` in this README.
+This repository is published as a public GitHub repo. See [PUBLISH.md](PUBLISH.md) for the `gh` CLI one-liner and the manual create-on-web-then-push route if you want to fork and republish your own copy (replace the copyright name in `LICENSE` and the username in this README's URLs).
 
 ## Attribution
 
