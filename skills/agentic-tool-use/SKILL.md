@@ -9,6 +9,8 @@ description: Lets the LLM call external functions, APIs, databases, or code to f
 
 **What it is.** Describe available tools (name, purpose, typed parameters) to the LLM; it decides when to call one and emits a structured function call; an orchestration layer runs it and returns the result for the model to use.
 
+Though commonly called *function calling*, the more expansive idea is *tool calling*: a "tool" can be a plain predefined function, but equally an API endpoint, a database query, or even an instruction directed at another specialized agent (agent-as-tool). That broader framing is what lets tool use scale into delegation and multi-agent systems.
+
 ## Reach for this when
 - The task needs real-time or external data
 - Access to private/proprietary systems (a company database, internal API)
@@ -34,6 +36,7 @@ Define each tool with a crisp description and typed parameters, keep the set sma
 - `agentic-reasoning-techniques` — reason+act (ReAct) loops
 - `agentic-guardrails-safety` — restrict tool capabilities
 - `agentic-exception-handling` — recover from tool errors
+- `agentic-multi-agent` — treat another agent as a callable tool (agent-as-tool)
 
 ---
 *Selection signals live in this skill's `description` (used for auto-triggering). To choose among all 21 patterns, see `agentic-pattern-selector`. Conceptual source: Antonio Gulli, *Agentic Design Patterns: A Hands-On Guide to Building Intelligent Systems*, Ch. 5 — original distillation from the text, not reproduced prose, code, or figures.*

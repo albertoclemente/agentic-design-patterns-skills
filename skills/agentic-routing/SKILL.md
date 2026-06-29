@@ -1,6 +1,6 @@
 ---
 name: agentic-routing
-description: Classifies an incoming request and dynamically directs control to the most appropriate tool, function, sub-agent, or workflow. Use when an agent must triage diverse inputs and pick among multiple distinct handlers based on intent or state — e.g., a support bot splitting sales, technical, and account queries. Routing can be driven by an LLM classifier, rules, or embedding similarity.
+description: Classifies an incoming request and dynamically directs control to the most appropriate tool, function, sub-agent, or workflow. Use when an agent must triage diverse inputs and pick among multiple distinct handlers based on intent or state — e.g., a support bot splitting sales, technical, and account queries. Routing can be driven by an LLM classifier, rules, embedding similarity, or a fine-tuned ML classifier.
 ---
 
 # Routing
@@ -21,7 +21,7 @@ description: Classifies an incoming request and dynamically directs control to t
 - The routing decision is itself as costly or error-prone as just doing the work
 
 ## Shape of the solution
-Implement the classifier with an LLM prompt, rule set, or embedding-similarity match. Define an exhaustive set of categories plus an explicit default/fallback, and keep the router's job narrow so accuracy holds as categories grow.
+Implement the classifier with one of four mechanisms: an LLM prompt, a deterministic rule set, embedding-similarity match, or a small discriminative ML model fine-tuned on labeled examples (more setup, but fast and stable once trained). Define an exhaustive set of categories plus an explicit default/fallback, and keep the router's job narrow so accuracy holds as categories grow.
 
 ## Common failure modes
 - Silent mis-routes with no fallback path

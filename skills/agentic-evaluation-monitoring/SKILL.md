@@ -21,6 +21,15 @@ description: Continuously assesses agent effectiveness, efficiency, and adherenc
 ## Shape of the solution
 Define metrics for accuracy, latency, and token usage; evaluate not just final answers but the agent's trajectory against a ground-truth path; use LLM-as-a-Judge for subjective qualities like helpfulness. Build unit tests and evalsets (run via UI, CLI, or pytest in CI/CD), monitor production continuously, and alert on drift or anomalies.
 
+## From agents to contractors
+The book frames an evolution from probabilistic agents toward more deterministic, accountable **contractors** (Gulli et al., *Agent Companion*) — a model that makes evaluation intrinsic rather than bolted on:
+- **Formalized contract** — a detailed spec that is the single source of truth for the deliverable and its acceptance criteria
+- **Negotiation & feedback** — the agent flags ambiguities and risks and resolves them *before* execution
+- **Quality-focused iterative execution** — it self-validates and refines against the contract's criteria until they pass
+- **Hierarchical decomposition** — a primary contractor spawns formal *subcontracts* for complex sub-tasks
+
+Putting acceptance criteria in the contract makes outputs measurable and auditable by construction.
+
 ## Common failure modes
 - Shipping with no evals
 - Vanity metrics that don't track task success
